@@ -1,0 +1,60 @@
+.sidenav {
+  background-color: rgb(61, 204, 223);
+  // height: auto; 
+  height: 90vh; 
+  overflow-y: auto; 
+  //position: fixed; 
+  border-right: 1px solid #ddd;
+  margin-top: 70%;
+
+}
+
+/* Customizing scrollbar width for WebKit browsers */
+.sidenav::-webkit-scrollbar {
+  width: 3px; /* Adjust the width of the scrollbar */
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Customize the scrollbar color */
+  border-radius: 10px; /* Optional: Round the scrollbar corners */
+}
+
+.sidenav::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Customize the track background */
+}
+
+
+.sidenav a {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-decoration: none;
+  font-size: 10px; 
+  color: white;
+  transition: background-color 0.3s;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4), /* Center darker */
+                -10px 4px 20px rgba(184, 183, 183, 0.1), /* Left lighter */
+                10px 4px 20px rgba(167, 165, 165, 0.1);  /* Right lighter */
+}
+
+.sidenav a i {
+  font-size: 24px; 
+  margin-bottom: 5px; 
+}
+
+.sidenav a:hover {
+  background-color: rgb(10, 170, 191);
+}
+
+.sidenav a span {
+  display: block;
+  text-align: center; 
+}
+
+@media (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+ 
+}

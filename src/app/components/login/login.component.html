@@ -1,0 +1,72 @@
+
+
+
+<div class="conatiner">
+  <div class="row" >
+    <div class="col-md-8">
+      <img src="../../../assets/ZingHRLogin.png" alt="" style="width: 101%; height: auto;" class="d-none d-md-block">
+    </div>
+    <div class="col-md-4" style="background-color: white">
+     <div class="main-card">
+      <form>
+        <div class="card text-center">
+          <div class="header">
+            <img src="../../../assets/logo_attendmss.png" style="width:50%;" >
+          </div>
+          <div class="header" style="padding: 5%;">
+            <b style="font-size: x-large;">Login</b>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <input type="email" class=" logininput" placeholder="Employee Name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="logininput" placeholder="Employee ID" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="logininput"
+                  id="passwordInput"
+                  [(ngModel)]="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <i [class]="eyeIcon" id="togglePasswordIcon" (click)="togglePassword()"></i>
+              </div>
+              
+              
+              
+            </div>
+            <div class="mb-3 form-check form-check-inline">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label" for="exampleCheck1" style="margin-top: 8px;font-size: small;color: rgb(66, 65, 65);">Remember Me</label>
+            </div>
+            
+            <a type="submit" class="login btn" (click)="login()">Login</a>
+            <div class="row cardfooter">
+              <div class="col-6">
+                <button type="button" class="btn punchIn" (click)="punchIn()">Punch In</button>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn punchOut" (click)="punchOut()">Punch Out</button>
+              </div>
+            </div>
+            <div class="row cardfooter">
+              <div class="col-6">
+                <a class="f-pass" (click)="punchIn()">Unlock Account</a>
+              </div>
+              <div class="col-6">
+                <a class="f-pass"  (click)="punchOut()">Forget Password</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+     </div>
+    </div>
+    
+  </div>
+</div>
+

@@ -1,0 +1,103 @@
+.card {
+  border: none;
+  background-color:white;
+}
+
+.input-group {
+  position: relative; /* Ensure the relative positioning for the absolute child */
+  display: flex;      /* Makes sure the icon stays inside the group */
+  align-items: center;
+}
+
+#passwordInput {
+  padding-right: 40px; /* Make space for the eye icon */
+  width: 100%;         /* Ensure the input takes the correct width */
+}
+
+#togglePasswordIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #ced4da;
+  z-index: 2; /* Ensure icon stays on top */
+}
+
+/* Optional: Change the color of the icon on hover */
+#togglePasswordIcon:hover {
+  color: #007bff;
+}
+
+.logininput {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ced4da;
+  width: 100%;
+  padding-top: 10px;
+}
+
+
+input::placeholder {
+  font-size: 10px; 
+  color: #888;     
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+
+.form-check-input {
+  margin-right: 10px; 
+}
+
+.login {
+  background-color: rgb(61, 204, 223);
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.punchIn {
+  border: 1px solid rgb(61, 204, 223);
+  border-radius: 20px;
+  width: 100%;
+  color: rgb(61, 204, 223);
+}
+.punchIn:active,
+.punchIn:hover {
+  color: white; /* Text color when button is clicked or focused */
+  background-color: rgb(61, 204, 223); /* Background color when button is clicked or focused */
+  border-color: rgb(61, 204, 223); /* Optional: update border color to match background */
+}
+
+.punchOut {
+  border: 1px solid rgb(61, 204, 223);
+  border-radius: 20px;
+  width: 100%;
+  color: rgb(61, 204, 223);
+}
+.punchOut:active,
+.punchOut:hover {
+  color: white; /* Text color when button is clicked or focused */
+  background-color: rgb(61, 204, 223); /* Background color when button is clicked or focused */
+  border-color: rgb(61, 204, 223); /* Optional: update border color to match background */
+}
+
+.cardfooter{
+  padding-top: 5%;
+}
+.f-pass{
+  color: rgb(61, 204, 223);
+  text-decoration: none;
+}
+
+.main-card{
+  padding: 10%;
+  background-color: white;
+}
+

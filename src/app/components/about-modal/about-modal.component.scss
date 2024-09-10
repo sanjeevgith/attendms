@@ -1,0 +1,60 @@
+.divider {
+    width: 100%; /* Thickness of the divider */
+    height: 100%; /* Full height of the card */
+    background-color: #000; /* Black color for the divider */
+}
+
+
+.profile-container {
+    display: flex; /* Center the image inside the container */
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevent profile container from shrinking */
+    padding: 7%;
+}
+
+.profile-container img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text horizontally */
+}
+
+.text-container h6 {
+    margin: -4px; /* Remove default margin */
+    padding: 0;
+}
+
+.content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: flex-start; /* Align buttons to the start of the container */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-btn {
+    width: 100%; 
+    border: none; 
+    background-color: white; 
+    outline: none; 
+    text-align: left; 
+}
+
+
+.about-btn:hover{
+ background-color: rgb(233, 232, 232);
+}
+
+
+.content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}

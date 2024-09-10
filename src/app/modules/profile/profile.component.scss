@@ -1,0 +1,172 @@
+.sidebar-child {
+  border-right: 1px solid rgb(212, 207, 207);
+  min-height: 100%; /* Ensure it fills the entire height of the parent */
+  height: 100vh;
+
+}
+
+.group-item {
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+ul.list-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-router {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1%;
+}
+
+.custom-scrollbar {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+.profile-img-about {
+  width: 100px; /* Set desired width */
+  height: 100px; /* Set equal height to width */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image fits the container */
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  height: 100%; /* Make sure the container takes the height available */
+}
+
+.header-profile {
+  height: 100vh; 
+}
+
+
+
+
+
+
+
+.list-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.group-item a {
+  display: block; /* Makes the link fill the width of the parent element */
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #f8f9fa; /* Light background color for button-like appearance */
+  color: #000; /* Text color */
+  border-left: 3px solid grey; /* Left border */
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), /* Center darker */
+}
+
+.col-profile {
+  background-image: url('../../../assets/about-profile.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.group-item a:hover {
+  display: block; /* Makes the link fill the width of the parent element */
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  background-color: rgb(61, 204, 223); /* Light background color for button-like appearance */
+  color: white; /* Text color */
+  border-left: 3px solid grey; /* Left border */
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+
+
+.header-profile{
+  border-bottom: 1px solid rgb(212, 207, 207);
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 160px;
+}
+
+
+.group-item {
+  list-style: none;
+  margin-bottom: 10px; /* Space between each item */
+}
+
+.line-divider {
+  border-left: 1px solid #ccc; /* Vertical line */
+  height: 20px;
+  margin-left: 10px; /* Space between icon and vertical line */
+  margin-right: 10px; /* Space between vertical line and text */
+}
+
+.d-flex.align-items-center i {
+  font-size: 20px; /* Adjust icon size if necessary */
+}
+
+
+// image
+
+.col-profile {
+  position: relative; /* Ensure this container is the reference point for absolute positioning */
+}
+
+.file-upload {
+  position: absolute;
+  top: 15px; /* Adjust the top position as needed */
+  right: 15px; /* Adjust the right position as needed */
+  display: inline-block;
+}
+
+#file-input {
+  display: none; /* Hides the file input */
+}
+
+.file-label {
+  cursor: pointer;
+  font-size: 24px; /* Adjust the size of the camera icon */
+  color: #333; /* Change color of the icon */
+}
+
+.file-label i {
+  transition: color 0.3s ease;
+}
+
+.file-label:hover i {
+  color: #4aa8b3; /* Change color on hover */
+}
+
+
+//end

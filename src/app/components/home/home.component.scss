@@ -1,0 +1,116 @@
+
+
+.card-header{
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.announcement-speech{
+    color: grey;
+}
+
+
+
+//scroll for new employee
+// .horizontal-scrollable {
+//     overflow-x: auto;
+//     white-space: nowrap;
+//     width: 100%; /* Make sure it takes up full width */
+//   }
+  
+//   .horizontal-scrollable > .row {
+//     display: flex;
+//     flex-wrap: nowrap;
+//   }
+  
+//   .horizontal-scrollable > .row > .col-4 {
+//     flex: 0 0 50%; /* Set each column to take 50% of the container's width */
+//     max-width: 50%; /* Ensure the columns don't exceed 50% width */
+//     height: 100px;
+//   }
+  
+//   /* Decorations */
+//   .col-4 {
+//     color: white;
+//     font-size: 24px;
+//     padding: 18px 0;
+//     text-align: center;
+//   }
+  
+//   .col-4:nth-child(2n+1) {
+//     background: rgb(124, 211, 210);
+//   }
+  
+//   .col-4:nth-child(2n+2) {
+//     background: rgb(171, 237, 236);
+//   }
+  
+.scroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.horizontal-scrollable {
+    overflow-x: hidden; /* Hide scrollbar */
+    white-space: nowrap;
+    width: 92%;
+}
+
+.horizontal-scrollable > .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.horizontal-scrollable > .row > .col-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 100px;
+}
+
+/* Button styles */
+.scroll-btn {
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-btn.left {
+    left: -2%;
+}
+
+.scroll-btn.right {
+    right: -2%;
+}
+
+/* Decorations */
+.col-4 {
+    color: white;
+    font-size: 24px;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.col-4:nth-child(2n+1) {
+    background: rgb(124, 211, 210);
+}
+
+.col-4:nth-child(2n+2) {
+    background: rgb(171, 237, 236);
+}

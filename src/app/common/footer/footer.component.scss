@@ -1,0 +1,22 @@
+
+
+
+.copyrightphone{
+    display: none;
+    padding-left: 15px;
+}
+.copyright{
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .copyrightphone{
+        display: block;
+    }
+    .copyright{
+        display: none;
+    }
+
+
+  }

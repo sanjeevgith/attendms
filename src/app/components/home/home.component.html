@@ -1,0 +1,92 @@
+<div class="container-flex">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Welcome New Employees</div>
+        <div class="card-body">
+            <!-- <div class="container horizontal-scrollable">
+                <div class="row text-center">
+                    <div class="col-4">1</div>
+                    <div class="col-4">2</div>
+                    <div class="col-4">3</div>
+                    <div class="col-4">4</div>
+                    <div class="col-4">5</div>
+                    <div class="col-4">6</div>
+                    <div class="col-4">7</div>
+                </div>
+            </div> -->
+            <div class="scroll-container">
+                <button class="scroll-btn left" (click)="scrollLeft()">
+                    <i class="fa fa-chevron-left"></i> <!-- Font Awesome Icon -->
+                </button>
+                
+                <div class="container horizontal-scrollable" #scrollable>
+                    <div class="row text-center">
+                        <div class="col-4">1</div>
+                        <div class="col-4">2</div>
+                        <div class="col-4">3</div>
+                        <div class="col-4">4</div>
+                        <div class="col-4">5</div>
+                        <div class="col-4">6</div>
+                        <div class="col-4">7</div>
+                    </div>
+                </div>
+                
+                <button class="scroll-btn right" (click)="scrollRight()">
+                    <i class="fa fa-chevron-right"></i> <!-- Font Awesome Icon -->
+                </button>
+            </div>
+            
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Time, Attendance & Leave</div>
+        <div class="card-body"></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Rewards & Recognitions</div>
+        <div class="card-body"></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Announcement</div>
+        <div class="card-body">
+          <p class="announcement-speech">
+            Good morning everyone, I am thrilled to share some exciting news
+            with you all today. As part of our ongoing commitment to improving
+            our processes and enhancing your experience, we are launching a
+            brand-new application designed specifically for managing attendance.
+            Introducing [App Name]! 🎉 This innovative application represents a
+            significant leap forward in how we track and manage attendance.The
+            new app simplifies the check-in and check-out process, making it
+            faster and more efficient than ever before. You can now mark your
+            attendance with just a few taps on your device. Real-Time Updates:
+            Stay informed with real-time updates. The app will keep you and your
+            team updated on attendance status and any changes instantly.Its
+            intuitive and easy-to-navigate interface ensures that you can manage
+            your attendance seamlessly, without any hassle. Comprehensive
+            Reports: For those who need to keep track of attendance records, the
+            app offers detailed reports and analytics, providing valuable
+            insights and making administrative tasks simpler. Enhanced Security:
+            We’ve implemented robust security measures to ensure that your data
+            is protected and handled with the utmost confidentiality. Getting
+            Started: To get started, simply download [App Name] from the [App
+            Store/Google Play Store/Company Portal] and follow the easy setup
+            instructions.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Social Feeds</div>
+        <div class="card-body"></div>
+      </div>
+      <div class="card">
+        <div class="card-header">Open Positions</div>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+</div>

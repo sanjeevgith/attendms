@@ -1,0 +1,58 @@
+.about{
+    font-size: x-large;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.about:hover{
+    background-color: rgb(208, 202, 202);
+    border-radius: 30px;
+}
+
+.home{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    transition: all 0.3s ease; 
+    width: 100%;
+    background-color: white; 
+    z-index: 1000; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+
+.navbar.scrolled {
+    padding: 5px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.navbar-brand img {
+    transition: width 0.3s ease; 
+}
+
+.navbar.scrolled .navbar-brand img {
+    width: 50px; 
+}
+
+
+
+.sidebar {
+    background-color: #f8f9fa; 
+    width: 40px; 
+    height: 100vh; 
+    position: fixed; 
+    top: 60px; 
+    overflow-x: hidden; 
+}
+
+.col-md-11 {
+    margin-left: 40px; 
+    padding: 20px; 
+}
+
+
