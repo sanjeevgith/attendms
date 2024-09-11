@@ -21,33 +21,33 @@ export class HomeComponent implements AfterViewInit{
 
   ngAfterViewInit() {
     this.updateButtonVisibility();
-    this.scrollable.nativeElement.addEventListener('scroll', () => {
-      this.updateButtonVisibility();
-      this.cdr.detectChanges(); 
-    });
+    this.scrollable.nativeElement.addEventListener('scroll', () => this.updateButtonVisibility());
   }
 
   scrollLeft() {
     this.scrollable.nativeElement.scrollBy({
-      left: -200, 
+      left: -this.scrollable.nativeElement.clientWidth,
       behavior: 'smooth'
     });
-    this.updateButtonVisibility();
   }
 
   scrollRight() {
     this.scrollable.nativeElement.scrollBy({
-      left: 200, 
+      left: this.scrollable.nativeElement.clientWidth,
       behavior: 'smooth'
     });
-    this.updateButtonVisibility();
   }
 
   updateButtonVisibility() {
-    const container = this.scrollable.nativeElement;
-    const maxScrollLeft = container.scrollWidth - container.clientWidth;
-    this.isAtStart = container.scrollLeft === 0;
-    this.isAtEnd = container.scrollLeft >= maxScrollLeft;
-    this.cdr.detectChanges();
+    const scrollableElement = this.scrollable.nativeElement;
+    const maxScrollLeft = scrollableElement.scrollWidth - scrollableElement.clientWidth;
+  
+    this.isAtStart = scrollableElement.scrollLeft === 0;
+  
+    // Allow for a small margin of error (e.g., 1px) when checking if at the end
+    this.isAtEnd = scrollableElement.scrollLeft >= maxScrollLeft - 1;
+  
+    this.cdr.detectChanges(); 
   }
+  
 }

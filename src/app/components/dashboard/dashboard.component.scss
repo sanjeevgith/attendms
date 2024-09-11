@@ -16,8 +16,11 @@
 .main-router{
   padding-top: 80px;
   margin-right: 0px;
+  flex: 1; /* Take remaining space */
+  overflow-y: auto; /* Enable vertical scrolling */
   
 }
+
 
 @media (min-width: 769px) {
     .phone {

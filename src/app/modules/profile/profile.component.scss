@@ -171,3 +171,12 @@ ul.list-item {
 
 
 //end
+.custom-row {
+  display: flex;
+  justify-content: space-between; /* Distribute items with space between them */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.col-md-2 {
+  text-align: center; /* Optional: Center the content inside the div */
+}

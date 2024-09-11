@@ -1,156 +1,147 @@
-
-
-.card-header{
-    background-color: white;
-    font-family:Arial, Helvetica, sans-serif;
+.card-header {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.card{
-    border-radius: 5px;
-    margin: 10px;
+.card {
+  border-radius: 5px;
+  margin: 10px;
 }
 
-.announcement-speech{
-    color: grey;
+.announcement-speech {
+  color: grey;
 }
 
-
-
-//scroll for new employee
-// .horizontal-scrollable {
-//     overflow-x: auto;
-//     white-space: nowrap;
-//     width: 100%; /* Make sure it takes up full width */
-//   }
-  
-//   .horizontal-scrollable > .row {
-//     display: flex;
-//     flex-wrap: nowrap;
-//   }
-  
-//   .horizontal-scrollable > .row > .col-4 {
-//     flex: 0 0 50%; /* Set each column to take 50% of the container's width */
-//     max-width: 50%; /* Ensure the columns don't exceed 50% width */
-//     height: 100px;
-//   }
-  
-//   /* Decorations */
-//   .col-4 {
-//     color: white;
-//     font-size: 24px;
-//     padding: 18px 0;
-//     text-align: center;
-//   }
-  
-//   .col-4:nth-child(2n+1) {
-//     background: rgb(124, 211, 210);
-//   }
-  
-//   .col-4:nth-child(2n+2) {
-//     background: rgb(171, 237, 236);
-//   }
-  
 .scroll-container {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
 }
 
 .horizontal-scrollable {
-    overflow-x: hidden; /* Hide scrollbar */
-    white-space: nowrap;
-    width: 92%;
+  white-space: nowrap;
+  width: 100%; /* Full width of the container */
+  scroll-snap-type: x mandatory; /* Snap to items */
+  overflow-x: hidden;
 }
 
 .horizontal-scrollable > .row {
-    display: flex;
-    flex-wrap: nowrap;
+
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center; /* Center items vertically if needed */
 }
 
 .horizontal-scrollable > .row > .col-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    height: 100px;
+  flex: 0 0 100%; /* Each card takes full width of the container */
+  max-width: 94%; /* Ensure cards do not exceed full width */
+  height: 100px; /* Fixed height for cards */
+  box-sizing: border-box; /* Include padding and border in width and height */
+  scroll-snap-align: center; /* Center the item in the scroll area */
+  display: flex;
+  //align-items: center; /* Center content vertically */
+  padding: 0 5px; /* Optional padding for spacing */
+  overflow-x: hidden;
+  border-radius: 5px;
 }
 
-/* Button styles */
 .scroll-btn {
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .scroll-btn.left {
-    left: -2%;
+  left: -2%;
 }
 
 .scroll-btn.right {
-    right: -2%;
+  right: -2%;
 }
 
-/* Decorations */
-.col-4 {
-    color: white;
-    font-size: 24px;
-    padding: 18px 0;
-    text-align: center;
-}
-.text{
-    font-size: 10px;
+.text {
+  font-size: 10px;
 }
 .line-divider {
-    border-left: 1px solid #ccc; /* Vertical line */
-    height: 20px;
-    margin-left: 10px; /* Space between icon and vertical line */
-    margin-right: 10px; /* Space between vertical line and text */
-  }
-
-.col-4:nth-child(2n+1) {
-    background: rgb(124, 211, 210);
+  border-left: 1px solid #ccc; /* Vertical line */
+  height: 20px;
+  margin-left: 10px; /* Space between icon and vertical line */
+  margin-right: 10px; /* Space between vertical line and text */
 }
 
-.col-4:nth-child(2n+2) {
-    background: rgb(171, 237, 236);
+.line-divider1 {
+  border-left: 1px solid #ccc; /* Vertical line */
+  height: 90%;
+  margin-right: 10px; /* Space between vertical line and text */
+}
+
+.col-4:nth-child(2n + 1) {
+  background: white;
+  border: 1px solid grey;
+}
+.col-4 {
+  margin: 10px;
+}
+
+.col-4:nth-child(2n + 2) {
+  background: white;
+  border: 1px solid grey;
 }
 
 .fa-trophy:before {
-    background-color: #f6d8d8;
-    padding: 10px;
-    border-radius: 50%;
+  background-color: #f6d8d8;
+  padding: 10px;
+  border-radius: 50%;
 }
 .fa-headset:before {
-    background-color: #f0e6bc;
-    padding: 10px;
-    border-radius: 50%;
+  background-color: #f0e6bc;
+  padding: 10px;
+  border-radius: 50%;
 }
 .fa-question-circle:before {
-    background-color: #f2c3e9;
-    padding: 10px;
-    border-radius: 50%;
+  background-color: #f2c3e9;
+  padding: 10px;
+  border-radius: 50%;
 }
 .fa-search:before {
-    background-color: #c4edce;
-    padding: 10px;
-    border-radius: 50%;
+  background-color: #c4edce;
+  padding: 10px;
+  border-radius: 50%;
 }
 .fa-newspaper:before {
-    background-color: #f3c7e2;
-    padding: 10px;
-    border-radius: 50%;
+  background-color: #f3c7e2;
+  padding: 10px;
+  border-radius: 50%;
 }
 .fa-book:before {
-    background-color: #bae9b5;
-    padding: 10px;
-    border-radius: 50%;
+  background-color: #bae9b5;
+  padding: 10px;
+  border-radius: 50%;
 }
+
+.fa-user {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 5%;
+    font-size: 50px;
+
+}
+
+.sendwish{
+    margin: 10px;
+    width: 91%;
+    border-radius: 5px;
+    border: none;
+}
+
