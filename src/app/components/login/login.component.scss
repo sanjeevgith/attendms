@@ -4,14 +4,14 @@
 }
 
 .input-group {
-  position: relative; /* Ensure the relative positioning for the absolute child */
-  display: flex;      /* Makes sure the icon stays inside the group */
+  position: relative; 
+  display: flex;      
   align-items: center;
 }
 
 #passwordInput {
-  padding-right: 40px; /* Make space for the eye icon */
-  width: 100%;         /* Ensure the input takes the correct width */
+  padding-right: 40px; 
+  width: 100%;         
 }
 
 #togglePasswordIcon {
@@ -22,10 +22,10 @@
   cursor: pointer;
   font-size: 18px;
   color: #ced4da;
-  z-index: 2; /* Ensure icon stays on top */
+  z-index: 2; 
 }
 
-/* Optional: Change the color of the icon on hover */
+
 #togglePasswordIcon:hover {
   color: #007bff;
 }
@@ -70,9 +70,9 @@ input::placeholder {
 }
 .punchIn:active,
 .punchIn:hover {
-  color: white; /* Text color when button is clicked or focused */
-  background-color: rgb(61, 204, 223); /* Background color when button is clicked or focused */
-  border-color: rgb(61, 204, 223); /* Optional: update border color to match background */
+  color: white; 
+  background-color: rgb(61, 204, 223); 
+  border-color: rgb(61, 204, 223); 
 }
 
 .punchOut {
@@ -83,9 +83,9 @@ input::placeholder {
 }
 .punchOut:active,
 .punchOut:hover {
-  color: white; /* Text color when button is clicked or focused */
-  background-color: rgb(61, 204, 223); /* Background color when button is clicked or focused */
-  border-color: rgb(61, 204, 223); /* Optional: update border color to match background */
+  color: white; 
+  background-color: rgb(61, 204, 223); 
+  border-color: rgb(61, 204, 223); 
 }
 
 .cardfooter{

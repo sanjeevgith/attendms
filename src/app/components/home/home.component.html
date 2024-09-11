@@ -3,21 +3,10 @@
     <div class="col-md-4">
       <div class="card">
         <div class="card-header">Welcome New Employees</div>
-        <div class="card-body">
-            <!-- <div class="container horizontal-scrollable">
-                <div class="row text-center">
-                    <div class="col-4">1</div>
-                    <div class="col-4">2</div>
-                    <div class="col-4">3</div>
-                    <div class="col-4">4</div>
-                    <div class="col-4">5</div>
-                    <div class="col-4">6</div>
-                    <div class="col-4">7</div>
-                </div>
-            </div> -->
+        <!-- <div class="card-body">
             <div class="scroll-container">
                 <button class="scroll-btn left" (click)="scrollLeft()">
-                    <i class="fa fa-chevron-left"></i> <!-- Font Awesome Icon -->
+                    <i class="fa fa-chevron-left"></i>
                 </button>
                 
                 <div class="container horizontal-scrollable" #scrollable>
@@ -33,11 +22,32 @@
                 </div>
                 
                 <button class="scroll-btn right" (click)="scrollRight()">
-                    <i class="fa fa-chevron-right"></i> <!-- Font Awesome Icon -->
+                    <i class="fa fa-chevron-right"></i>
                 </button>
             </div>
-            
+        </div> -->
+        <div class="card-body">
+          <div class="scroll-container">
+            <button class="scroll-btn left" [ngClass]="{'hidden': isAtStart}" (click)="scrollLeft()">
+              <i class="fa fa-chevron-left"></i> <!-- Font Awesome Icon -->
+            </button>
+            <div class="container horizontal-scrollable" #scrollable>
+              <div class="row text-center">
+                <div class="col-4">1</div>
+                <div class="col-4">2</div>
+                <div class="col-4">3</div>
+                <div class="col-4">4</div>
+                <div class="col-4">5</div>
+                <div class="col-4">6</div>
+                <div class="col-4">7</div>
+              </div>
+            </div>
+            <button class="scroll-btn right" [ngClass]="{'hidden': isAtEnd}" (click)="scrollRight()">
+              <i class="fa fa-chevron-right"></i> <!-- Font Awesome Icon -->
+            </button>
+          </div>
         </div>
+        
       </div>
       <div class="card">
         <div class="card-header">Time, Attendance & Leave</div>
@@ -49,6 +59,56 @@
         <div class="card-header">Rewards & Recognitions</div>
         <div class="card-body"></div>
       </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text">
+              <i class="fas fa-trophy"></i> 
+              <span class="line-divider"></span>
+               Rewards and Recognitions
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text">
+              <i class="fas fa-headset"></i> 
+              <span class="line-divider"></span>
+               Help Desk
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text">
+              <i class="fas fa-question-circle"></i> 
+              <span class="line-divider"></span>
+               FAQs
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text">
+              <i class="fas fa-search"></i>
+              <span class="line-divider"></span>
+               Employee Search
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text">
+              <i class="fas fa-newspaper"></i>
+              <span class="line-divider"></span>
+               News & Articles
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text">
+              <i class="fas fa-book"></i>
+              <span class="line-divider"></span>
+               HR Handbook
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
     </div>
     <div class="col-md-4">
       <div class="card">
