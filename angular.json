@@ -79,8 +79,8 @@
           },
           "defaultConfiguration": "development"
         },
-         "server": {
-        "builder": "@angular-devkit/build-angular:server",
+        "server": {
+        "builder": "@angular/build:application",
         "options": {
           "outputPath": "dist/attendms/server",
           "main": "server.ts",
