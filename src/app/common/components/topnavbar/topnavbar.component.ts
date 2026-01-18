@@ -8,7 +8,7 @@ import {
   MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
-import { AboutModalComponent } from '../../components/about-modal/about-modal.component';
+import { AboutModalComponent } from '../../../components/about-modal/about-modal.component';
 
 @Component({
   selector: 'app-topnavbar',
