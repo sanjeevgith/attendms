@@ -4,6 +4,7 @@ import { ProfileComponent } from './profile.component';
 import { AboutComponent } from './components/about/about.component';
 import { SalaryComponent } from './components/salary/salary.component';
 import { BankComponent } from './components/bank/bank.component';
+import { DocumentComponent } from './components/document/document.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'bank',
         component: BankComponent
+      },
+       {
+        path: 'document',
+        component: DocumentComponent
       }
     ],
   },
