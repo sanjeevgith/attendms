@@ -4,12 +4,10 @@ import { TopnavbarComponent } from '../../common/components/topnavbar/topnavbar.
 import { FooterComponent } from '../../common/components/footer/footer.component';
 import { SidenavbarComponent } from '../../common/components/sidenavbar/sidenavbar.component';
 import { SidenavbarPhoneComponent } from '../../common/components/sidenavbar-phone/sidenavbar-phone.component';
-import { AboutModalComponent } from '../../components/about-modal/about-modal.component';
-
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [RouterOutlet,TopnavbarComponent,FooterComponent,SidenavbarComponent,SidenavbarPhoneComponent,AboutModalComponent],
+  imports: [RouterOutlet,TopnavbarComponent,FooterComponent,SidenavbarComponent,SidenavbarPhoneComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
