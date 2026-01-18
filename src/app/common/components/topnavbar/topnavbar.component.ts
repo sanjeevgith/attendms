@@ -1,14 +1,7 @@
 import { Component, HostListener, inject, OnInit } from '@angular/core';
-import {
-  MAT_DIALOG_DATA,
-  MatDialog,
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogRef,
-  MatDialogTitle,
-} from '@angular/material/dialog';
-import { AboutModalComponent } from '../../../components/about-modal/about-modal.component';
+import { MatDialog } from '@angular/material/dialog';
+import { AboutModalComponent } from 'src/app/components/about-modal/about-modal.component';
+
 
 @Component({
   selector: 'app-topnavbar',
