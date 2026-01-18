@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormControl, FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 import { Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterLink,FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
   encapsulation: ViewEncapsulation.Emulated // Def
