@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnalyticsComponent } from './analytics.component';
 
-const routes: Routes = [];
-
+const routes: Routes = [
+  {
+    path:'',
+    component:AnalyticsComponent,
+    children:[ ]
+  }
+];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
