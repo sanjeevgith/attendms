@@ -5,9 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ssr": "ng build && ng run attendms:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:attendms": "node dist/attendms/server/server.mjs"
+    "serve:ssr": "netlify dev"
   },
   "private": true,
   "dependencies": {

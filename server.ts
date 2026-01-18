@@ -1,45 +1,22 @@
-import 'zone.js/node';
+import { AngularAppEngine, createRequestHandler } from '@angular/ssr'
+import { getContext } from '@netlify/angular-runtime/context.mjs'
 
-import express from 'express';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { renderApplication } from '@angular/platform-server';
+const angularAppEngine = new AngularAppEngine()
 
-import bootstrap from './src/main.server';
+export async function netlifyAppEngineHandler(request: Request): Promise<Response> {
+  const context = getContext()
 
-export function app(): express.Express {
-  const server = express();
-  const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-  const browserDistFolder = join(serverDistFolder, '../browser');
-  const indexHtml = join(browserDistFolder, 'index.html');
+  // Example API endpoints
+  // const pathname = new URL(request.url).pathname
+  // if (pathname === '/api/hello') {
+  //   return Response.json({ message: 'Hello from the API' })
+  // }
 
-  server.use(express.static(browserDistFolder, {
-    maxAge: '1y'
-  }));
-
-  server.get('*', async (req, res, next) => {
-    try {
-      const html = await renderApplication(bootstrap, {
-        document: indexHtml,
-        url: req.originalUrl
-      });
-
-      res.send(html);
-    } catch (err: unknown) {
-      next(err);
-    }
-  });
-
-  return server;
+  const result = await angularAppEngine.handle(request, context)
+  return result || new Response('Not found', { status: 404 })
 }
 
-function run(): void {
-  const port = process.env['PORT'] || 4000;
-
-  const server = app();
-  server.listen(port, () => {
-    console.log(`Node Express server listening on http://localhost:${port}`);
-  });
-}
-
-run();
+/**
+ * The request handler used by the Angular CLI (dev-server and during build).
+ */
+export const reqHandler = createRequestHandler(netlifyAppEngineHandler)
