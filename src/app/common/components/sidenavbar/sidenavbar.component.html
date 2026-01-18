@@ -8,6 +8,6 @@
     <a [routerLink]="['/dashboard/library']" routerLinkActive="active"><i class="fas fa-book"></i><span>Library</span></a>
     <a [routerLink]="['/dashboard/analytics']" routerLinkActive="active"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
     <a [routerLink]="['/dashboard/helpdesk']" routerLinkActive="active"><i class="fas fa-question-circle"></i><span>Help</span></a>
-    <a [routerLink]="['/dashboard/logout']" routerLinkActive="active"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+    <a (click)="logout()" routerLinkActive="active"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
 </div>
 

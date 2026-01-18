@@ -20,6 +20,30 @@ const routes: Routes = [
         path: 'setting',
         loadChildren: () => import('../setting/setting.module').then(m => m.SettingModule)
       },
+       {
+        path: 'analytics',
+        loadChildren: () => import('../analytics/analytics.module').then(m => m.AnalyticsModule)
+      },
+      {
+        path: 'library',
+        loadChildren: () => import('../library/library.module').then(m => m.LibraryModule)
+      },
+       {
+        path: 'helpdesk',
+        loadChildren: () => import('../helpdesk/helpdesk.module').then(m => m.HelpdeskModule)
+      },
+       {
+        path: 'notification',
+        loadChildren: () => import('../notification/notification.module').then(m => m.NotificationModule)
+      },
+       {
+        path: 'calender',
+        loadChildren: () => import('../calender/calender.module').then(m => m.CalenderModule)
+      },
+       {
+        path: 'message',
+        loadChildren: () => import('../message/message.module').then(m => m.MessageModule)
+      },
       {
         path:'**',
         component:LoginComponent

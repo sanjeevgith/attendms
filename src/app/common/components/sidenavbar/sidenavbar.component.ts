@@ -10,4 +10,8 @@ import { RouterLink } from '@angular/router';
 })
 export class SidenavbarComponent {
 
+  logout(){
+    alert("are you sure want to logout!")
+  }
+
 }
