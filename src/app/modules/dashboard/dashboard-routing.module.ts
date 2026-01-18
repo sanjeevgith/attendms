@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '../../components/home/home.component';
 import { DashboardComponent } from './dashboard.component';
 import { LoginComponent } from '../../components/login/login.component';
 
@@ -9,9 +8,9 @@ const routes: Routes = [
     path: '',
     component: DashboardComponent,
     children: [
-      { 
-        path: '',
-        component: HomeComponent 
+      {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'profile',
